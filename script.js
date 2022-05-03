@@ -12,15 +12,14 @@ document.querySelector("#play").addEventListener("click", () => {
   let userChoice = ""
   do {
     userChoice = prompt(`Choose one: \n${list()}`)
-    console.log(typeof userChoice)
-  } while (userChoice == "")
+  } while (["1", "2", "3"].includes(userChoice) == false)
 
   let computerChoice = getRandomInt(0, 3)
 
   alert(`Computer has choosen ${cosas[computerChoice]}`)
 
   if (computerChoice == userChoice % 3) {
-    alert("You loose")
+    alert("You lose")
   } else if (computerChoice == userChoice - 1) {
     alert("Draw")
   } else {
