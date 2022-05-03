@@ -1,5 +1,5 @@
 document.querySelector("#play").addEventListener("click", () => {
-  let cosas = ["Rock", "Paper", "Scissor"]
+  let cosas = ["Rock", "Paper", "Scissors"]
 
   function list() {
     let message = ""
